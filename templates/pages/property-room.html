@@ -1,0 +1,548 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Avid Real Estates</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon" />
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" />
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/new.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/css/new2.css' %}" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="{% static 'assets/css/styl.css' %}" rel="stylesheet" />
+    <!-- =======================================================
+  * Template Name: EstatesAgency - v4.0.1
+  * Template URL: https://bootstrapmade.com/real-estates-agency-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+    
+    
+    {% with home="" history="" team="" get_job="" apartment="" room="active" house="" commerce="" land="" vehicle="" blog="" contact=""%}
+        <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <a href="/"><img src="{% static 'assets/img/logo4.png' %}" alt="" /></a>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="{% static 'assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto {{home}}" href="/">Home</a></li>
+                    <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li ><a class="{{history}}" href="history">History</a></li>
+                            <li><a class="{{team}}" href="team">Team</a></li>
+                            <li><a class="{{get_job}}" href="get-job">Get Job</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"><span>Properties</span> <i class="bi bi-chevron-down"></i
+              ></a>
+                        <ul>
+                            <li><a class="{{apartment}}" href="property-apartment ">Apartment</a></li>
+                            <li><a class="{{room}}" href="property-room">Room</a></li>
+                            <li><a class="{{house}}" href="property-house">House</a></li>
+                            <li><a class="{{commerce}}" href="property-commerce">Commerce</a></li>
+                            <li><a class="{{land}}" href="property-land">Land</a></li>
+                            <li><a class="{{vehicle}}" href="property-vehicle">Vehicle</a></li>
+                        </ul>
+                    </li>
+                    <!--<li>
+                        <a class="nav-link scrollto {{blog}}" href="#">Blog</a>
+                    </li>-->
+                    <li><a class="nav-link scrollto {{contact}}" href="contact-us">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+    {% endwith %}
+
+
+
+    <!-- End Intro Section -->
+
+    <main id="main">
+
+
+        <!-- ======= Latest Commerce Properties Section ======= -->
+
+        <section class="featured" id="featured" >
+
+            <h2 class="heading" style="padding-top: 80px;"> <span>Best Rooms</span> For You</h2>
+        
+            <div class="box-container">
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-1.jpg' %}" alt="">
+                        <div class="info">
+                            <h3>for rent</h3>
+                        </div>
+                        <div class="icons">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-2.jpg' %}" alt="">
+                        <div class="info">
+                        
+                            <h3>for sell</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-3.jpg' %}" alt="">
+                        <div class="info">
+                        
+                            <h3>for rent</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-4.jpg' %}" alt="">
+                        <div class="info">
+                        
+                            <h3>for rent</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-5.jpg' %}" alt="">
+                        <div class="info">
+                            
+                            <h3>for sell</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-6.jpg' %}" alt="">
+                        <div class="info">
+                        
+                            <h3>for sell</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-1.jpg' %}" alt="">
+                        <div class="info">
+                            <h3>for rent</h3>
+                        </div>
+                        <div class="icons">
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-2.jpg' %}" alt="">
+                        <div class="info">
+                        
+                            <h3>for sell</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-3.jpg' %}" alt="">
+                        <div class="info">
+                        
+                            <h3>for rent</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-4.jpg' %}" alt="">
+                        <div class="info">
+                        
+                            <h3>for rent</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-5.jpg' %}" alt="">
+                        <div class="info">
+                            
+                            <h3>for sell</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <div class="image-container">
+                        <img src="{% static 'assets/images/img-6.jpg' %}" alt="">
+                        <div class="info">
+                        
+                            <h3>for sell</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h3 style="font-size: 16px;">250,000,000 RWF/mo</h3>
+                            
+                        </div>
+                        <div class="location">
+                            <h3>modern apartments</h3>
+                            <p>jogeshwari west, mumbai, india - 400104</p>
+                        </div>
+                        <div class="details">
+                            
+                            <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                            <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                        </div>
+                        <div class="buttons">
+                            
+                            <a href="#" class="btn">view details</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        
+        </section>
+
+        <!-- ======= Footer ======= -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="nav-footer">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="/">Home</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="about">About</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="property-apartment">Property</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="blog">Blog</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="contact-us">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="socials-a">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#">
+                                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="copyright-footer">
+                            <p class="copyright color-text-a">
+                                &copy; Copyright
+                                <span class="color-a">Avid Real Estates</span> All Rights Reserved.
+                            </p>
+                        </div>
+                        <div class="credits">
+                            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstatesAgency
+          -->
+                            Designed by <a href="#">Avid Tech Innovators</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End  Footer -->
+
+        <div id="preloader"></div>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+        <!-- Vendor JS Files -->
+        <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+        <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+        <!-- Template Main JS File -->
+        <script src="{% static 'assets/js/main.js' %}"></script>
+        <script src="{% static 'assets/js/new.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+
+
+
+{% block content%}
+
+{% with home="" about="" apartment="" room="" house="" commerce="" land="" vehicle="" blog="" contact="active"%}
+        <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="logo">
+                <a href="/"><img src="{% static 'assets/img/logo4.png' %}" alt="" /></a>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="{% static 'assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto {{home}}" href="#">Home</a></li>
+                    <li><a class="nav-link scrollto {{home}}" href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#"><span>Properties</span> <i class="bi bi-chevron-down"></i
+              ></a>
+                        <ul>
+                            <li><a class="{{apartment}}" href="property-apartment ">Apartment</a></li>
+                            <li><a class="{{room}}" href="property-room">Room</a></li>
+                            <li><a class="{{house}}" href="property-house">House</a></li>
+                            <li><a class="{{commerce}}" href="property-commerce">Commerce</a></li>
+                            <li><a class="{{land}}" href="property-land">Land</a></li>
+                            <li><a class="{{vehicle}}" href="property-vehicle">Vehicle</a></li>
+                        </ul>
+                    </li>
+                    <!--<li>
+                        <a class="nav-link scrollto {{blog}}" href="#">Blog</a>
+                    </li>-->
+                    <li><a class="nav-link scrollto {{contact}}" href="#">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+        </div>
+    </header>
+    <!-- End Header -->
+    {% endwith %}
+
+
+{% endblock %}
